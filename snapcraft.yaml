@@ -7,7 +7,7 @@ confinement: strict
 apps:
   tree:
     command: tree
-    plugs: [home, network-bind]
+    plugs: [home, network]
 
 parts:
   tree-src:
