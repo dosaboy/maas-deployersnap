@@ -1,0 +1,16 @@
+name: maas-deployer 
+version: "0.0.8"
+summary: MAAS cluster deployment tool.
+description: MAAS cluster deployment tool.
+confinement: strict
+
+apps:
+  tree:
+    command: tree
+    plugs: [home, network-bind]
+
+parts:
+  tree-src:
+    plugin: python3
+    source: lp:~maas-deployers/maas-deployer/next
+
